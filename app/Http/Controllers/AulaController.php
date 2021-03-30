@@ -6,7 +6,8 @@ class AulaController extends Controller
 {
     public function show($id = null)
     {
-        echo 'exibe um ou todos os recursos';
+        $aulas = \App\Models\Aula::all();
+        dd($aulas);
     }
 
     public function create()
